@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  overflow: hidden;
+}
+
+.image {
+  position: relative;
+  
+}
+.image img {
+  height: 300px;
+  width: 100%;
+}
+.fas {
+  display: none;
+  height: 70px;
+  position: absolute;
+  top:130px;
+  left: 160px;
+  transform: translate(-50%,-50%) scale(0);
+  animation: grow 0.5s linear ;
+}
+@keyframes grow {
+  to {
+    transform: translate(-50%,-50%) scale(2);
+    opacity: 0;
+  }
+}
+.show {
+  display: block;
+}
